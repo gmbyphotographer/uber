@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>UBER update</title>
+		<link rel="stylesheet" href="css/styles.css">
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+		<script src="scripts/util.js"></script> 
+		<script src="scripts/jquery-1.6.2.min.js"></script>
+		<script src="scripts/app.js"></script>
+		<script src="scripts/jquery.steppedSlider.js"></script>
+		<script src="scripts/jquery-ui-1.8.15.custom.min.js"></script>
+		
+		<style type="text/css">
+			.xlink {cursor:default}
+			.hlink{cursor:pointer}
+		</style>
+
+	</head>
+	<!--Body start-->
+	<body>
+		<div id="text_container">
+			<div id="description">
+				<div id="uber_update"></div>
+				<div class="tab" id="identify">
+					
+				</div>
+				<div  id="order">
+				</div>
+				<div class="tab" id="profile">
+				</div>
+
+				<div class="tab" id="B1"></div>
+				<div class="tab" id="B2"></div>
+				<div class="tab" id="B3"></div>
+
+				<div id="screen1_text">
+					<H1>Order the car you want</H1>
+					<br><p>This update includes incorporating UberXL and SUV into the navigation bar containing the other car options to save on some of that valuable screen space for the map. Simply tap any of the cars at the bottom to supersize your ride. 
+					<br><br>
+					This Uber update also changes the image of the car within the bottom navigation bar so that all images of cars are consistent between the map and your navigation bar. 
+					<br><br>
+					Try clicking on the different car options on the left to see how the map changes with each choice.
+					</p>
+
+				</div>
+				<div id="screen2_text">
+					<H1>Find your ride</H1>
+					<p>Awesome! Your Uber driver is on his way... but wait, what should you be looking for? While a license plate is nice, it's hard to see when the car pulls up parallel to your building. Similarly, the logo of the car may not be visible, and if you're not a car enthusiast, it may be hard to figure out if you have the right car.  
+					<br>
+					<h3>See the car</h3>
+					Wouldn't it be great if you could see what the car looked like? A tiny picture in the corner doesn't do the car much justice... so if you'd like a larger picture of the car, just click anywhere on the purple bar to get a bigger picture.</p>
+				</div>
+				<div id="screen3_text">
+					<H1>Check you out!</H1>
+					<p>Uber's current options menu leaves something (or perhaps many things) to be desired. In addition, many of the current options are misleading or unnecessarily repetitive. This update changes the options menu so it is easier to navigate through simplified icons and clearer language.
+					<br>
+					<h3>User Statistics</h3>
+					Under "view stats", you can take a look at some interesting numbers associated with your current Uber use. How much do you usually pay for a car? How far do you travel? What kind of car do you find yourself in most often? All of these questions and more will be answered when you take a peek in here! Come on, times wasting!
+					<br>
+					<h3>Your Uber History</h3>
+					Within "history" you can get a better picture of who you've driven with, complete with a picture of the car and your rating. If you forgot to rate a driver, you can also do so here in the history tab. In Uber's previous versions, you had to click through several different options to find this little nugget of information. Now, it's available in a much more obvious location. Clicking into any of these trips could provide further detail about the trip... like the driver's contact information in case you forgot something in their car.
+					</p>
+				</div>
+			</div>
+		</div>
+
+        	<div id="iphone">
+        		<div id="screen_container">
+        			<!--ordering a car-->
+        			<div id="screen_1">
+	        			<div id="map"></div>
+		        		<div class="top"></div>        		
+		        		<div id="bottom"></div>
+		        		<div class="button">
+		        			<div id="grey"></div>
+		        			<div id="blue"></div>
+		        			<!--<div id="car_icons"></div>-->
+		        			<div class= "cars" id="c1"></div>
+		        			<div class= "cars" id="c2"></div>
+		        			<div class= "cars" id="c3"></div>
+		        			<div class= "cars" id="c4"></div>
+		        			<div class= "cars" id="c5"></div>
+		        			<div class= "cars" id="c6"></div>
+		        		</div>
+		        		<!--divs for clicking slider over-->
+		        		<div id="choose_taxi"></div>
+		        		<div id="choose_black"></div>
+		        		<div id="choose_x"></div>
+		        	
+
+		        		<!-- Cool script with working slider
+		        		<script>
+							$(function() {
+						        var trueVals = [1,2,3];
+
+						        //Initiate the stepped range slider
+						        $("#slider-single").steppedSlider({
+						          trueValues: trueVals,
+						          callback: function(slide) {
+						            $(".single-value").text(slide.value);
+						          }
+						        });
+
+						      });
+						</script>
+
+						<div class="slider-wrapper">
+						      <div id="slider-single" class="slider">
+						        <div class="slider-body"></div>
+						      </div>
+						    </div> -->
+
+		        		<div class="cars" id="uberx"></div>
+		        		<div class="cars" id="taxi"></div>
+		        		<div class="cars" id="black"></div>
+		        		<div class="cars" id="uberXL"></div>
+		        		<div class="cars" id="SUV"></div>
+		        	</div> 
+		        	
+		        	<!--seeing the car-->
+		        	<div id="screen_2">
+		        		<div id="top2"></div>
+		        		<div id="predrivermap"></div>
+		        		<div id="drivermap"></div>
+		        		<div id="destination"></div>
+		        		<div id="travel_info"></div>
+		        		<div id="request"></div>
+		        		<div id="search_bg"></div>
+		        		<div id="searching"></div>
+		        		<div id="call"></div>
+		        		<div id="driver_info"></div>
+		        	</div> 
+
+		        	<!--your profile-->
+
+		        	<div id="screen_3">
+		        		<div id="top3"></div>
+			        	<div id="prof">
+			        		<div id="info_scroll_container">
+				        		<div id="info_container">
+				        			<div id="prof_info">
+						        		<div id="scroll_container">
+						        			<div id="label"></div>
+						        			<div id="chart_container">
+						        				<div id="chart"></div>
+						       				</div>
+						       			</div>
+						       		</div>
+					       		</div>
+					       	</div>
+			       		</div>
+			        	<div id="options"></div>
+			        	<div id="history_scroll_container">
+			        		<div id="history_header"></div>
+				        	<div id="history_container">
+			        			<div id="history"></div>
+			        		</div> 
+			        	</div>
+			        </div>
+        		</div>    	       
+	    	</div>
+		</div>
+	</body>
+</html>
